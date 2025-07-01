@@ -2,7 +2,7 @@ import cv2
 cap=cv2.VideoCapture(0,cv2.CAP_DSHOW) # windows ke bole dicche direct show korte
 #many types of video DIVX,XVID,MJPG,X264,WMV1,WMV2 
 fourcc=cv2.VideoWriter_fourcc(*"XVID")
-output=cv2.VideoWriter(r"C:\Users\sotez\OneDrive\Desktop\Open CV\output.avi",fourcc,20.0,(640,480),0)
+output=cv2.VideoWriter(r"C:\Users\sotez\OneDrive\Desktop\Open CV\output.avi",fourcc,20.0,(640,480))
 while cap.isOpened():
   ret,frame=cap.read() 
   if ret==True:
